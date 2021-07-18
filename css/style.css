@@ -4720,7 +4720,7 @@ section {
 
 .swiper-container {
   width: 80%;
-  height: 400px;
+  height: 300px;
   margin: auto;
 }
 
@@ -4729,7 +4729,9 @@ section {
 }
 
 .image-slider__image img {
-  max-height: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-prev,
