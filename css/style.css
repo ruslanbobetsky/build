@@ -4715,7 +4715,7 @@ section {
 }
 
 .nav-list {
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .swiper-container {
@@ -4732,11 +4732,6 @@ section {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: black;
 }
 
 .contacts-block {
@@ -4887,12 +4882,13 @@ section {
 /* Автоширина */
 
 .image-slider .swiper-slide {
-  /* width: auto; */
+  width: auto;
 }
 
 .footer {
   min-height: 80px;
-  background-color: #333333;
+  margin-top: 25px;
+  background-color: rgba(51, 51, 51, 0.8);
   padding: 30px 0 0 5px;
   font-size: 14px;
   color: #fff;
@@ -4913,17 +4909,216 @@ section {
   .container {
     max-width: 750px;
   }
+
+  .header-description {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    line-height: 1.2;
+  }
+
+  .navbar {
+    font-size: 15px;
+  }
+
+  .nav-list {
+    margin-right: 20px;
+  }
+
+  .history-description:nth-child(even) {
+    display: block;
+  }
+
+  .history-description:nth-child(even) .history-img {
+    float: right;
+  }
+
+  .title-swiper {
+    font-family: "FiraSans-Medium";
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 0px 30px 7px;
+  }
+
+  .title-swiper {
+    font-size: 24px;
+    margin: 0px 0px 25px 45px;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .contacts-description {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 560px;
   }
+
+  .navbar {
+    font-size: 14px;
+  }
+
+  .nav-list {
+    margin-right: 15px;
+  }
+
+  .history-img {
+    min-width: 280px;
+    height: 175px;
+    margin-right: 20px;
+  }
+
+  .history-description:nth-child(even) .history-img {
+    margin-left: 15px;
+    height: 230px;
+  }
+
+  .hospital-tasks__list {
+    padding-top: 5px;
+    padding-left: 12px;
+  }
+
+  .contacts-title {
+    font-family: "FiraSans-Medium";
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 10px 35px;
+  }
+
+  .contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 578px) {
+  body {
+    font-size: 14px;
+  }
+
   .container {
     width: 90%;
+  }
+
+  .logo {
+    padding: 0px;
+  }
+
+  .navbar {
+    font-size: 10px;
+  }
+
+  .nav-list {
+    margin-right: -10px;
+  }
+
+  .nav-list:last-child {
+    margin-right: 0px;
+  }
+
+  .header-title {
+    font-size: 15px;
+  }
+
+  .history-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .history-img {
+    min-width: 280px;
+    height: 175px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .history-description:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .history-description:nth-child(even) .history-img {
+    float: none;
+    margin-left: 0px;
+    min-width: 280px;
+    height: 175px;
+  }
+
+  .therapy {
+    font-size: 13px;
+  }
+
+  .therapy ul {
+    padding-left: 20px;
+    line-height: 1.2;
+  }
+
+  .therapy > ul {
+    margin-bottom: 0.4em;
+    margin-top: 0.7em;
+  }
+
+  .map {
+    width: 320px !important;
+  }
+
+  .contacts-title {
+    font-size: 18px;
+    margin: 0 0 7px 15px;
+  }
+
+  .title-swiper {
+    font-size: 18px;
+    margin: 0px 0px 10px 15px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .map {
+    width: 280px !important;
+    height: 200px !important;
+  }
+
+  .block__body {
+    padding: 0px 0px 0px 15px;
+  }
+
+  .image-slider {
+    padding: 20px 0 50px 0;
+  }
+
+  .swiper-container {
+    height: 250px;
+  }
+
+  .image-slider__image img {
+    height: 250px;
   }
 }
 

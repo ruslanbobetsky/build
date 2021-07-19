@@ -231,7 +231,7 @@ let myImageSlider = new Swiper('.image-slider', {
 		slideShadows: true,
 	},
 	*/
-	/*
+	
 	// Брейк поинты (адаптив)
 	// Ширина экрана
 	breakpoints: {
@@ -245,7 +245,7 @@ let myImageSlider = new Swiper('.image-slider', {
 			slidesPerView: 3,
 		}
 	},
-	*/
+	
 	/*
 	// Брейк поинты (адаптив)
 	// Соотношение сторон
