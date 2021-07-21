@@ -4629,6 +4629,7 @@ section {
 
 .hospital-tasks__list {
   padding-top: 10px;
+  padding-bottom: 3px;
   padding-left: 22px;
   display: block;
 }
@@ -4644,6 +4645,14 @@ section {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 40px;
+}
+
+.history-description:last-child {
+  display: block;
+}
+
+.history-description:last-child .history-img {
+  float: right;
 }
 
 .history-description:nth-child(even) {
@@ -4670,6 +4679,7 @@ section {
 }
 
 .history-img {
+  float: left;
   min-width: 350px;
   height: 200px;
   margin-right: 40px;
@@ -5029,17 +5039,20 @@ section {
 
   .history-description {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .history-img {
-    min-width: 280px;
-    height: 175px;
+    width: 350px;
+    height: 200px;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-top: 18px;
   }
 
   .history-description:nth-child(even) {
@@ -5047,16 +5060,16 @@ section {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .history-description:nth-child(even) .history-img {
     float: none;
     margin-left: 0px;
-    min-width: 280px;
-    height: 175px;
+    min-width: 350px;
+    height: 240px;
   }
 
   .therapy {
@@ -5097,12 +5110,26 @@ section {
   .swiper-button-next {
     display: none !important;
   }
+
+  .contact-adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 375px) {
+  .navbar {
+    font-weight: 600;
+  }
+
   .map {
     width: 280px !important;
     height: 200px !important;
+  }
+
+  .history {
+    padding: 15px 0;
   }
 
   .block__body {
@@ -5119,6 +5146,30 @@ section {
 
   .image-slider__image img {
     height: 250px;
+  }
+
+  .history-img {
+    width: 270px;
+    height: 160px;
+    margin-right: 0;
+    margin-top: 18px;
+  }
+
+  .history-description:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .history-description:nth-child(even) .history-img {
+    float: none;
+    margin-left: 0px;
+    min-width: 270px;
+    height: 180px;
   }
 }
 
